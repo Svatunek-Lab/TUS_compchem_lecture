@@ -12,6 +12,7 @@ nav:
   - Exercises:
       - exercises/index.md
       - 1 · Single point and scan: exercises/01-sp-scan.md
+      - 2 · Geometry optimisation: exercises/02-opt.md
   - Downloads: downloads.md
 
 theme:

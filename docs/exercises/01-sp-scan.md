@@ -6,8 +6,8 @@ length.
 ## Python (ASE + PySCF)
 
 <div class="nb-buttons" markdown>
-[:simple-googlecolab: Open in Colab](https://colab.research.google.com/github/Svatunek-Lab/TUS_compchem_lecture/blob/main/docs/notebooks/01_sp_scan.ipynb){ .md-button .md-button--primary }
-[:material-eye: View on GitHub](https://github.com/Svatunek-Lab/TUS_compchem_lecture/blob/main/docs/notebooks/01_sp_scan.ipynb){ .md-button }
+[:simple-googlecolab: Open in Colab](https://colab.research.google.com/github/Svatunek-Lab/TUS_compchem_lecture/blob/main/docs/notebooks/01_sp_scan.ipynb){ .md-button .md-button--primary target="_blank" rel="noopener" }
+[:material-eye: View on GitHub](https://github.com/Svatunek-Lab/TUS_compchem_lecture/blob/main/docs/notebooks/01_sp_scan.ipynb){ .md-button target="_blank" rel="noopener" }
 [:material-download: Download notebook](../notebooks/01_sp_scan.ipynb){ .md-button download }
 </div>
 

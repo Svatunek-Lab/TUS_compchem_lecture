@@ -6,6 +6,7 @@ files for the same task.
 | # | Exercise |
 | - | -------- |
 | 1 | [Single point and scan](01-sp-scan.md) |
+| 2 | [Geometry optimisation](02-opt.md) |
 
 <!--
 To add an exercise:

@@ -1,0 +1,7 @@
+# N2 geometry optimisation, starting from a stretched bond
+! HF def2-SVP Opt
+
+* xyz 0 1
+N   0.000   0.000   0.000
+N   0.000   0.000   1.400
+*
