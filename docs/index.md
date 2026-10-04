@@ -5,35 +5,27 @@ Dennis Svatunek, TU Wien
 
 <div class="grid cards" markdown>
 
--   :material-cog-outline:{ .lg .middle } **Setup**
-
-    ---
-
-    Run the notebooks in Google Colab or on your own machine.
-
-    [:octicons-arrow-right-24: Setup](setup.md)
-
--   :material-notebook-outline:{ .lg .middle } **Exercises**
-
-    ---
-
-    Jupyter notebooks (ASE, PySCF) and ORCA input files.
-
-    [:octicons-arrow-right-24: Exercises](exercises/index.md)
-
 -   :material-console:{ .lg .middle } **Running ORCA**
 
     ---
 
-    How to run ORCA input files from the command line.
+    Install ORCA and run input files from the command line.
 
     [:octicons-arrow-right-24: Running ORCA](orca.md)
+
+-   :material-flask-outline:{ .lg .middle } **Exercises**
+
+    ---
+
+    ORCA input files to try yourself.
+
+    [:octicons-arrow-right-24: Exercises](exercises/index.md)
 
 -   :material-download:{ .lg .middle } **Downloads**
 
     ---
 
-    Slides, notebooks and input files.
+    Slides and input files.
 
     [:octicons-arrow-right-24: Downloads](downloads.md)
 

@@ -1,11 +1,11 @@
-/* Row of buttons (Colab / View / Download) on exercise pages */
-.nb-buttons {
+/* Row of download buttons on exercise pages */
+.buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1rem 0 1.5rem;
 }
 
-.nb-buttons .md-button {
+.buttons .md-button {
   margin: 0;
 }

@@ -1,7 +1,7 @@
 # Exercises
 
-Each exercise has a Jupyter notebook (ASE + PySCF, runs in Google Colab) and ORCA input
-files for the same task.
+Each exercise has ORCA input files to download and run. See
+[Running ORCA](../orca.md) for how to run them.
 
 | # | Exercise |
 | - | -------- |
@@ -10,7 +10,7 @@ files for the same task.
 
 <!--
 To add an exercise:
-  1. Notebook -> docs/notebooks/NN_name.ipynb ; ORCA inputs -> docs/files/exNN/
-  2. Copy 01-sp-scan.md, change the file names in the button links
+  1. ORCA inputs -> docs/files/exNN/
+  2. Copy 01-sp-scan.md, change the file names in the download buttons and --8<-- lines
   3. Add the page to `nav` in mkdocs.yml, to the table above and to downloads.md
 -->

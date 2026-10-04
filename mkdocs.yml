@@ -1,5 +1,5 @@
 site_name: "Computational Organic Chemistry: A Practical Introduction"
-site_description: Lecture materials, notebooks and slides — TUS, 7 October 2026
+site_description: Lecture materials, ORCA exercises and slides — TUS, 7 October 2026
 site_author: Dennis Svatunek
 site_url: https://svatunek-lab.github.io/TUS_compchem_lecture/
 repo_url: https://github.com/Svatunek-Lab/TUS_compchem_lecture
@@ -8,12 +8,11 @@ edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
-  - Setup: setup.md
+  - Running ORCA: orca.md
   - Exercises:
       - exercises/index.md
       - 1 · Single point and scan: exercises/01-sp-scan.md
       - 2 · Geometry optimisation: exercises/02-opt.md
-  - Running ORCA: orca.md
   - Downloads: downloads.md
 
 theme:
