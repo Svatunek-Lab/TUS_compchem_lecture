@@ -1,0 +1,11 @@
+/* Row of Colab / View / Download buttons at the top of a hands-on page */
+.nb-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.nb-buttons .md-button {
+  margin: 0;
+}

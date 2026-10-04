@@ -8,16 +8,22 @@ Lecture materials for TUS, 7 October 2026.
 
 ```
 docs/
-  index.md, setup.md, notebooks.md, downloads.md   # site pages
-  notebooks/   # .ipynb files (linked from notebooks.md, opened in Colab from here)
-  files/       # slides and other downloads (linked from downloads.md)
-mkdocs.yml     # site config and navigation
+  index.md, setup.md, downloads.md   # general pages
+  hands-on/      # one page per notebook (explanation + Colab/View/Download buttons)
+  notebooks/     # the .ipynb files (Colab opens them from here)
+  orca/          # ORCA explanation and example pages
+  files/         # slides and other downloads; ORCA inputs in files/orca/
+mkdocs.yml       # site config and navigation (nav:)
 ```
 
 ## Adding material
 
-- **Notebook:** put the `.ipynb` in `docs/notebooks/` and copy a row in `docs/notebooks.md`.
-- **Slides / files:** put them in `docs/files/` and add a row in `docs/downloads.md`.
+- **Notebook:** put the `.ipynb` in `docs/notebooks/`, copy a page in `docs/hands-on/`,
+  change the file name in its three button links, and add the page to `nav` in `mkdocs.yml`.
+- **ORCA example:** put the input files in `docs/files/orca/`, copy `docs/orca/opt-freq.md`
+  and add it to `nav`. Use `--8<-- "docs/files/orca/<file>"` inside a code block to show a
+  file's contents on the page.
+- **Slides / other files:** put them in `docs/files/` and add a row in `docs/downloads.md`.
 
 Pushing to `main` rebuilds and deploys the site (GitHub Actions).
 
