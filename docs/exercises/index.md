@@ -7,6 +7,9 @@ Each exercise has ORCA input files to download and run. See
 | - | -------- |
 | 1 | [Single point and scan](01-sp-scan.md) |
 | 2 | [Geometry optimisation](02-opt.md) |
+| 3 | [Atomic charges (Hirshfeld)](03-charges.md) |
+| 4 | [Orbitals and cube files](04-orbitals.md) |
+| 5 | [Optimisation and frequencies](05-freq.md) |
 
 <!--
 To add an exercise:

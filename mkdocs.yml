@@ -13,6 +13,9 @@ nav:
       - exercises/index.md
       - 1 · Single point and scan: exercises/01-sp-scan.md
       - 2 · Geometry optimisation: exercises/02-opt.md
+      - 3 · Atomic charges: exercises/03-charges.md
+      - 4 · Orbitals and cube files: exercises/04-orbitals.md
+      - 5 · Optimisation and frequencies: exercises/05-freq.md
   - Downloads: downloads.md
 
 theme:
