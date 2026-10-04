@@ -14,7 +14,7 @@ The notebooks use **ASE** and **PySCF**. The ORCA parts need a separate
     Install [Miniforge](https://github.com/conda-forge/miniforge), then:
 
     ```bash
-    conda create -n compchem -c conda-forge python=3.12 ase pyscf matplotlib jupyterlab
+    conda create -n compchem -c conda-forge python=3.12 ase pyscf py3dmol matplotlib jupyterlab
     conda activate compchem
     jupyter lab
     ```
@@ -25,7 +25,7 @@ The notebooks use **ASE** and **PySCF**. The ORCA parts need a separate
 
     ```bash
     uv venv
-    uv pip install ase pyscf matplotlib jupyterlab
+    uv pip install ase pyscf py3Dmol matplotlib jupyterlab
     uv run jupyter lab
     ```
 

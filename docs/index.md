@@ -21,6 +21,14 @@ Dennis Svatunek, TU Wien
 
     [:octicons-arrow-right-24: Exercises](exercises/index.md)
 
+-   :material-console:{ .lg .middle } **Running ORCA**
+
+    ---
+
+    How to run ORCA input files from the command line.
+
+    [:octicons-arrow-right-24: Running ORCA](orca.md)
+
 -   :material-download:{ .lg .middle } **Downloads**
 
     ---

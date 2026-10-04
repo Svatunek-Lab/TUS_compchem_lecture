@@ -13,6 +13,7 @@ nav:
       - exercises/index.md
       - 1 · Single point and scan: exercises/01-sp-scan.md
       - 2 · Geometry optimisation: exercises/02-opt.md
+  - Running ORCA: orca.md
   - Downloads: downloads.md
 
 theme:
@@ -56,6 +57,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:

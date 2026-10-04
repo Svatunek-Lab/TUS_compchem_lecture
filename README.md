@@ -22,6 +22,9 @@ mkdocs.yml       # site config and navigation (nav:)
    ORCA inputs are shown on the page with `--8<-- "docs/files/exNN/file.inp"` inside a code block.
 3. Add the page to `nav` in `mkdocs.yml`, to `docs/exercises/index.md` and to `docs/downloads.md`.
 
+Download links need the file name, otherwise browsers save the file as "download":
+`[n2_sp.inp](../files/ex01/n2_sp.inp){ .md-button download="n2_sp.inp" }`
+
 Slides go to `docs/files/slides.pdf`.
 
 Pushing to `main` rebuilds and deploys the site (GitHub Actions).

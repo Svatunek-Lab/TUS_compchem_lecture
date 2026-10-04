@@ -8,7 +8,7 @@ length.
 <div class="nb-buttons" markdown>
 [:simple-googlecolab: Open in Colab](https://colab.research.google.com/github/Svatunek-Lab/TUS_compchem_lecture/blob/main/docs/notebooks/01_sp_scan.ipynb){ .md-button .md-button--primary target="_blank" rel="noopener" }
 [:material-eye: View on GitHub](https://github.com/Svatunek-Lab/TUS_compchem_lecture/blob/main/docs/notebooks/01_sp_scan.ipynb){ .md-button target="_blank" rel="noopener" }
-[:material-download: Download notebook](../notebooks/01_sp_scan.ipynb){ .md-button download }
+[:material-download: Download notebook](../notebooks/01_sp_scan.ipynb){ .md-button download="01_sp_scan.ipynb" }
 </div>
 
 The structure is entered directly in the notebook as xyz text, so there is no file to
@@ -29,10 +29,13 @@ atoms = read(StringIO(xyz), format="xyz")
 
 ## ORCA
 
+!!! tip "First time running ORCA?"
+    See [Running ORCA](../orca.md) for how to run an input file from the command line.
+
 ### Single point
 
 <div class="nb-buttons" markdown>
-[:material-download: n2_sp.inp](../files/ex01/n2_sp.inp){ .md-button download }
+[:material-download: n2_sp.inp](../files/ex01/n2_sp.inp){ .md-button download="n2_sp.inp" }
 </div>
 
 ```text title="n2_sp.inp"
@@ -48,7 +51,7 @@ The energy is on the line `FINAL SINGLE POINT ENERGY` in `n2_sp.out`.
 ### Scan
 
 <div class="nb-buttons" markdown>
-[:material-download: n2_scan.inp](../files/ex01/n2_scan.inp){ .md-button download }
+[:material-download: n2_scan.inp](../files/ex01/n2_scan.inp){ .md-button download="n2_scan.inp" }
 </div>
 
 ```text title="n2_scan.inp"
