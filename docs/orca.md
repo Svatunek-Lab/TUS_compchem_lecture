@@ -52,10 +52,8 @@ page and in the ORCA documentation.
 ## macOS
 
 You run ORCA in the **Terminal** app: Applications → Utilities → Terminal, or press
-++cmd+space++ and type "Terminal".
-
-The Terminal is a window where you type commands instead of clicking. A few things that
-help:
+++cmd+space++ and type "Terminal". The Terminal is a window where you type commands
+instead of clicking. A few Mac-specific things that help:
 
 - **Go to a folder:** type `cd ` (with a space), drag the folder from Finder into the
   Terminal window and press ++enter++. Terminal is now "in" that folder.
@@ -65,13 +63,27 @@ help:
 Download the **macOS** version of ORCA that matches your Mac: Apple Silicon (M1, M2, …)
 or Intel. Apple menu → **About This Mac** shows which one you have.
 
-## Linux
+## 0 · Open the command line
 
-Open a terminal, e.g. with ++ctrl+alt+t++.
+All following steps are typed into a command line (terminal) and are the same on
+every system.
 
----
+| System | How to open the command line |
+| ------ | ---------------------------- |
+| Windows | Start menu → **Ubuntu** (this is WSL, see above) |
+| macOS | ++cmd+space++ → type "Terminal" → ++enter++ |
+| Linux | ++ctrl+alt+t++, or search for "Terminal" |
 
-**The steps below are the same on Linux, macOS and WSL.**
+You type a command and press ++enter++ to run it. The basic commands you need:
+
+| Command | What it does |
+| ------- | ------------ |
+| `pwd` | Show which folder you are in |
+| `ls` | List the files in the current folder |
+| `cd foldername` | Go into a folder |
+| `cd ..` | Go up one folder |
+| `cd ~` | Go to your home folder |
+| `mkdir foldername` | Create a new folder |
 
 ## 1 · Check that ORCA is found
 
