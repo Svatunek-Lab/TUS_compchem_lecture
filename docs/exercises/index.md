@@ -10,6 +10,7 @@ Each exercise has ORCA input files to download and run. See
 | 3 | [Atomic charges (Hirshfeld)](03-charges.md) |
 | 4 | [Orbitals and cube files](04-orbitals.md) |
 | 5 | [Optimisation and frequencies](05-freq.md) |
+| 6 | [Conformer search](06-conf-search.md) |
 
 <!--
 To add an exercise:

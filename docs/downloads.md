@@ -43,3 +43,10 @@ The `download="name"` attribute makes the browser save the file (under that name
 | ---- | ----------- |
 | [:material-file-download: n2_freq.inp](files/ex05/n2_freq.inp){ download="n2_freq.inp" } | N<sub>2</sub>, optimisation + frequencies |
 | [:material-file-download: acetone_freq.inp](files/ex05/acetone_freq.inp){ download="acetone_freq.inp" } | Acetone, optimisation + frequencies |
+
+## Exercise 6 · Conformer search
+
+| File | Description |
+| ---- | ----------- |
+| [:material-file-download: conf_search.inp](files/ex06/conf_search.inp){ download="conf_search.inp" } | GOAT conformer search, 1-chloro-2-methylcyclohexane |
+| [:material-file-download: best_conf_opt.inp](files/ex06/best_conf_opt.inp){ download="best_conf_opt.inp" } | DFT re-optimisation of the best conformer |
