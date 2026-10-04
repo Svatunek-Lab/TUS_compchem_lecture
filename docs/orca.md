@@ -85,15 +85,31 @@ You type a command and press ++enter++ to run it. The basic commands you need:
 | `cd ~` | Go to your home folder |
 | `mkdir foldername` | Create a new folder |
 
-## 1 · Check that ORCA is found
+## 1 · Find the full path of ORCA
+
+ORCA should always be started with its **full path** (for example
+`/home/yourname/orca/orca`), not just `orca`. Parallel runs do not work otherwise.
+
+The full path is the folder where you unpacked ORCA, followed by `/orca`. If you are
+not sure, go to that folder and use `pwd`:
 
 ```bash
-orca
+cd ~/orca        # the folder where you unpacked ORCA
+pwd              # prints e.g. /home/yourname/orca  (macOS: /Users/yourname/orca)
+```
+
+Test it by running ORCA with its full path and no input file:
+
+```bash
+/home/yourname/orca/orca
 ```
 
 ORCA should print a short message that it needs an input file. If you get
-"command not found", the ORCA folder is not on your `PATH`. Either fix that (see the
-installation tutorial) or call ORCA with its full path, e.g. `~/orca/orca`.
+"No such file or directory", the path is wrong.
+
+!!! tip "Shortcut"
+    If the ORCA folder is on your `PATH` (see the installation tutorial), `which orca`
+    prints the full path, and `$(which orca)` inserts it into a command for you.
 
 ## 2 · Go to the folder with your input file
 
@@ -109,28 +125,21 @@ Copy `n2_sp.inp` into this folder, then check that it is there with `ls`.
 ## 3 · Run ORCA
 
 ```bash
-orca n2_sp.inp > n2_sp.out
+/home/yourname/orca/orca n2_sp.inp > n2_sp.out
 ```
+
+Replace `/home/yourname/orca/orca` with your full path from step 1. In the exercises
+this is written as `/path/to/orca`.
 
 `> n2_sp.out` writes the output into a file instead of onto the screen. The command
 returns when the calculation is finished.
-
-??? info "Running on several cores"
-    With `%pal nprocs 4 end` in the input, ORCA runs in parallel. This needs OpenMPI,
-    and ORCA must be called with its **full path**:
-
-    ```bash
-    $(which orca) n2_sp.inp > n2_sp.out
-    ```
-
-    See [Running a calculation in parallel](https://www.faccts.de/docs/orca/6.1/tutorials/first_steps/parallel.html).
 
 ??? info "Long calculations"
     To keep a calculation running after you close the terminal, and to see the output
     while it runs:
 
     ```bash
-    nohup orca n2_sp.inp > n2_sp.out &
+    nohup /path/to/orca n2_sp.inp > n2_sp.out &
     tail -f n2_sp.out      # Ctrl+C stops watching, not the calculation
     ```
 
@@ -149,6 +158,40 @@ From the command line:
 ```bash
 grep "FINAL SINGLE POINT ENERGY" n2_sp.out
 ```
+
+## Cores and memory
+
+The exercise inputs run on one core, which is enough for small molecules. For larger
+molecules you can tell ORCA to use several cores and how much memory it may use. Add
+these two lines to the input, below the `!` line:
+
+```text
+%pal nprocs 4 end
+%maxcore 2000
+```
+
+| Line | Meaning |
+| ---- | ------- |
+| `%pal nprocs 4 end` | Run on 4 CPU cores |
+| `%maxcore 2000` | Memory ORCA may use **per core**, in MB. Here: 4 × 2000 MB = 8 GB in total |
+
+How to choose the numbers:
+
+1. **Cores:** at most the number of cores your computer has. Find it with
+   `nproc` (Linux/WSL) or `sysctl -n hw.ncpu` (macOS).
+2. **Memory:** keep cores × maxcore at about **three quarters of your RAM**, since ORCA
+   sometimes uses more than it is given. With 16 GB RAM and 4 cores: `%maxcore 3000`.
+
+!!! warning "Parallel runs need two things"
+    - ORCA must be started with its **full path** (step 1).
+    - **OpenMPI** must be installed, in the version named in the
+      [ORCA installation tutorial](https://www.faccts.de/docs/orca/6.1/tutorials/first_steps/install.html).
+
+    Without these, parallel runs fail with an MPI error. Calculations on one core
+    work without OpenMPI.
+
+More: [Running a calculation in parallel](https://www.faccts.de/docs/orca/6.1/tutorials/first_steps/parallel.html),
+[Memory settings](https://www.faccts.de/docs/orca/6.1/tutorials/first_steps/memory.html).
 
 ## More
 

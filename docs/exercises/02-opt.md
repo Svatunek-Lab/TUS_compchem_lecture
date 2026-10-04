@@ -31,7 +31,7 @@ The start and optimised structures are then shown side by side with py3Dmol.
 ## ORCA
 
 !!! tip "First time running ORCA?"
-    See [Running ORCA](../orca.md) for how to run an input file from the command line.
+    See [Running ORCA](../orca.md) for how to run an input file from the command line. `/path/to/orca` below is the full path to your ORCA program.
 
 ### Part A · N<sub>2</sub>
 
@@ -61,7 +61,7 @@ errors. It is fast enough for larger molecules.
 ### Running and output
 
 ```bash
-orca n2_opt.inp > n2_opt.out
+/path/to/orca n2_opt.inp > n2_opt.out
 ```
 
 | File | Contents |

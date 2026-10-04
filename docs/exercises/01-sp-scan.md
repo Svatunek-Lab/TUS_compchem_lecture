@@ -30,7 +30,7 @@ atoms = read(StringIO(xyz), format="xyz")
 ## ORCA
 
 !!! tip "First time running ORCA?"
-    See [Running ORCA](../orca.md) for how to run an input file from the command line.
+    See [Running ORCA](../orca.md) for how to run an input file from the command line. `/path/to/orca` below is the full path to your ORCA program.
 
 ### Single point
 
@@ -43,7 +43,7 @@ atoms = read(StringIO(xyz), format="xyz")
 ```
 
 ```bash
-orca n2_sp.inp > n2_sp.out
+/path/to/orca n2_sp.inp > n2_sp.out
 ```
 
 The energy is on the line `FINAL SINGLE POINT ENERGY` in `n2_sp.out`.
@@ -62,7 +62,7 @@ The energy is on the line `FINAL SINGLE POINT ENERGY` in `n2_sp.out`.
 0.90 to 1.60 Å in 15 steps.
 
 ```bash
-orca n2_scan.inp > n2_scan.out
+/path/to/orca n2_scan.inp > n2_scan.out
 ```
 
 The energies are listed at the end of `n2_scan.out` and in `n2_scan.relaxscanact.dat`;
