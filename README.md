@@ -8,22 +8,21 @@ Lecture materials for TUS, 7 October 2026.
 
 ```
 docs/
-  index.md, setup.md, downloads.md   # general pages
-  hands-on/      # one page per notebook (explanation + Colab/View/Download buttons)
-  notebooks/     # the .ipynb files (Colab opens them from here)
-  orca/          # ORCA explanation and example pages
-  files/         # slides and other downloads; ORCA inputs in files/orca/
+  index.md, setup.md, downloads.md
+  exercises/     # one page per exercise: description, notebook buttons, ORCA section
+  notebooks/     # .ipynb files (Colab opens them from here)
+  files/         # slides; ORCA inputs per exercise in files/exNN/
 mkdocs.yml       # site config and navigation (nav:)
 ```
 
-## Adding material
+## Adding an exercise
 
-- **Notebook:** put the `.ipynb` in `docs/notebooks/`, copy a page in `docs/hands-on/`,
-  change the file name in its three button links, and add the page to `nav` in `mkdocs.yml`.
-- **ORCA example:** put the input files in `docs/files/orca/`, copy `docs/orca/opt-freq.md`
-  and add it to `nav`. Use `--8<-- "docs/files/orca/<file>"` inside a code block to show a
-  file's contents on the page.
-- **Slides / other files:** put them in `docs/files/` and add a row in `docs/downloads.md`.
+1. Notebook → `docs/notebooks/NN_name.ipynb`, ORCA inputs → `docs/files/exNN/`
+2. Copy `docs/exercises/01-sp-scan.md` and change the file names in the button links.
+   ORCA inputs are shown on the page with `--8<-- "docs/files/exNN/file.inp"` inside a code block.
+3. Add the page to `nav` in `mkdocs.yml`, to `docs/exercises/index.md` and to `docs/downloads.md`.
+
+Slides go to `docs/files/slides.pdf`.
 
 Pushing to `main` rebuilds and deploys the site (GitHub Actions).
 

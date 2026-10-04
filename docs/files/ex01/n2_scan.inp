@@ -1,0 +1,13 @@
+# N2 bond length scan: 0.90 -> 1.60 Angstrom in 15 steps
+! HF def2-SVP Opt
+
+%geom
+  scan
+    B 0 1 = 0.90, 1.60, 15
+  end
+end
+
+* xyz 0 1
+N   0.000   0.000   0.000
+N   0.000   0.000   1.100
+*

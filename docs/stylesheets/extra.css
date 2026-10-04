@@ -1,4 +1,4 @@
-/* Row of Colab / View / Download buttons at the top of a hands-on page */
+/* Row of buttons (Colab / View / Download) on exercise pages */
 .nb-buttons {
   display: flex;
   flex-wrap: wrap;

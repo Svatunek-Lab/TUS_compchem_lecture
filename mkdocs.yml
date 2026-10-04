@@ -9,15 +9,9 @@ edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - Setup: setup.md
-  - Hands-on (Python):
-      - hands-on/index.md
-      - 0 · Molecules with RDKit: hands-on/00-rdkit.md
-      - 1 · Structures with ASE: hands-on/01-ase.md
-      - 2 · Quantum chemistry with PySCF: hands-on/02-pyscf.md
-  - ORCA (advanced):
-      - orca/index.md
-      - Running ORCA: orca/running.md
-      - "Example: optimisation + frequencies": orca/opt-freq.md
+  - Exercises:
+      - exercises/index.md
+      - 1 · Single point and scan: exercises/01-sp-scan.md
   - Downloads: downloads.md
 
 theme:
