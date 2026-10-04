@@ -1,0 +1,67 @@
+site_name: "Computational Organic Chemistry: A Practical Introduction"
+site_description: Lecture materials, notebooks and slides — TUS, 7 October 2026
+site_author: Dennis Svatunek
+site_url: https://svatunek-lab.github.io/TUS_compchem_lecture/
+repo_url: https://github.com/Svatunek-Lab/TUS_compchem_lecture
+repo_name: Svatunek-Lab/TUS_compchem_lecture
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Notebooks: notebooks.md
+  - Downloads: downloads.md
+
+theme:
+  name: material
+  icon:
+    logo: material/flask-outline
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
