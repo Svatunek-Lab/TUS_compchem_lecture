@@ -58,7 +58,9 @@ The `download="name"` attribute makes the browser save the file (under that name
 | File | Description |
 | ---- | ----------- |
 | [:material-file-download: n2_freq.inp](files/ex05/n2_freq.inp){ download="n2_freq.inp" } | N<sub>2</sub>, optimisation + frequencies |
+| [:material-file-document-outline: n2_freq.out](files/ex05/n2_freq.out){ download="n2_freq.out" } | Output: N<sub>2</sub> frequency and thermochemistry |
 | [:material-file-download: acetone_freq.inp](files/ex05/acetone_freq.inp){ download="acetone_freq.inp" } | Acetone, optimisation + frequencies |
+| [:material-file-document-outline: acetone_freq.out](files/ex05/acetone_freq.out){ download="acetone_freq.out" } | Output: acetone frequencies, IR spectrum and thermochemistry |
 
 ## Exercise 6 · Conformer search
 
@@ -72,4 +74,5 @@ The `download="name"` attribute makes the browser save the file (under that name
 
 | File | Description |
 | ---- | ----------- |
-| [:material-file-download: ts_opt.inp](files/ex07/ts_opt.inp){ download="ts_opt.inp" } | TS optimisation + frequencies (prepared guess) |
+| [:material-file-download: ts_opt.inp](files/ex07/ts_opt.inp){ download="ts_opt.inp" } | Diels–Alder TS (butadiene + ethylene): optimisation + frequencies, HF-3c |
+| [:material-file-document-outline: ts_opt.out](files/ex07/ts_opt.out){ download="ts_opt.out" } | Output: optimised TS with one imaginary frequency |

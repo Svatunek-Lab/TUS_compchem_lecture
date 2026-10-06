@@ -21,6 +21,7 @@ method. That is why `Opt` and `Freq` are run together.
 
 <div class="buttons" markdown>
 [:material-download: n2_freq.inp](../files/ex05/n2_freq.inp){ .md-button download="n2_freq.inp" }
+[:material-file-document-outline: n2_freq.out](../files/ex05/n2_freq.out){ .md-button download="n2_freq.out" }
 </div>
 
 ```text title="n2_freq.inp"
@@ -35,6 +36,7 @@ method. That is why `Opt` and `Freq` are run together.
 
 <div class="buttons" markdown>
 [:material-download: acetone_freq.inp](../files/ex05/acetone_freq.inp){ .md-button download="acetone_freq.inp" }
+[:material-file-document-outline: acetone_freq.out](../files/ex05/acetone_freq.out){ .md-button download="acetone_freq.out" }
 </div>
 
 ```text title="acetone_freq.inp"
@@ -68,6 +70,39 @@ vibrations.
 | -------- | ------- | ---- | ---------- |
 | N<sub>2</sub> (linear) | 6 | 5 | 1 |
 | acetone | 30 | 6 | 24 |
+
+### Results
+
+**N<sub>2</sub>:** one vibration at 2792 cm⁻¹, the N≡N stretch, and no imaginary
+frequency, so the structure is a minimum. It has no IR intensity: the stretch does not
+change the dipole moment of a symmetric molecule, so N<sub>2</sub> is IR-inactive.
+
+**Acetone:** 24 vibrations, none imaginary. In the `IR SPECTRUM` section the strongest
+band is the C=O stretch:
+
+```text
+ 22:   1459.63   0.003912   19.77  0.000836  ( 0.000072 -0.000010 -0.028920)
+ 23:   1836.18   0.034130  172.48  0.005800  (-0.000015  0.076161 -0.000032)
+ 24:   3024.07   0.000237    1.20  0.000024  (-0.004946 -0.000003 -0.000014)
+```
+
+The columns are the mode number, the frequency (cm⁻¹) and the intensity (third column in
+km/mol). The experimental C=O band of acetone is at about 1715 cm⁻¹. Calculated
+frequencies are typically a few percent too high, because the calculation treats the
+vibrations as harmonic. For comparison with experiment they are often multiplied by an
+empirical scaling factor.
+
+The thermochemistry section of `acetone_freq.out`:
+
+```text
+Zero point energy                ...      0.08294384 Eh      52.05 kcal/mol
+Total Enthalpy                    ...   -192.80654921 Eh
+Final Gibbs free energy         ...   -192.84082621 Eh
+```
+
+Even at 0 K the molecule vibrates. This **zero-point energy** (52 kcal/mol here) is
+added to the electronic energy, together with thermal and entropy contributions, to give
+the enthalpy and Gibbs free energy at 298 K.
 
 To animate the vibrations, open the `.out` file in a viewer such as
 [Avogadro](https://www.openchemistry.org/projects/avogadro2/) or
