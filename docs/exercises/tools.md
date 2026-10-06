@@ -4,7 +4,7 @@
 
 To calculate your own molecule you need its 3D coordinates. This notebook turns a
 molecule **name** (e.g. `aspirin`) or a **SMILES** (e.g. `CC(=O)Oc1ccccc1C(=O)O`) into
-coordinates and prints a ready-to-run ORCA input. It runs in your browser on Google
+coordinates to copy into your ORCA input, and shows the structure in 3D. It runs in your browser on Google
 Colab; nothing needs to be installed. You only need a Google account.
 
 <div class="buttons" markdown>
@@ -14,9 +14,10 @@ Colab; nothing needs to be installed. You only need a Google account.
 1. Click **Open in Colab**.
 2. Run cell 1 (▶) to install the required packages. Colab may warn that the notebook
    is not from Google; click **Run anyway**.
-3. Enter your molecule in cell 2 and run it. The ORCA input is printed below the cell.
-4. Optional: cell 3 shows the structure in 3D, cell 4 downloads the `.inp` and `.xyz`
-   files.
+3. Enter your molecule in cell 2 and run it. The coordinates and a 3D view appear
+   below the cell.
+4. Copy the coordinate lines into your input, between `* xyz 0 1` and `*`. The
+   notebook also prints the charge and multiplicity for the `* xyz` line.
 
 For the next molecule, change the name in cell 2 and run cell 2 again.
 

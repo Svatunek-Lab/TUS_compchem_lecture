@@ -67,3 +67,9 @@ The `download="name"` attribute makes the browser save the file (under that name
 | [:material-file-download: conf_search.inp](files/ex06/conf_search.inp){ download="conf_search.inp" } | GOAT conformer search, 1-chloro-2-methylcyclohexane |
 | [:material-file-document-outline: conf_search.out](files/ex06/conf_search.out){ download="conf_search.out" } | Output of the conformer search (1 core, 50 min) |
 | [:material-molecule: conf_search.finalensemble.xyz](files/ex06/conf_search.finalensemble.xyz){ download="conf_search.finalensemble.xyz" } | All conformers found, sorted by energy |
+
+## Exercise 7 · Transition state
+
+| File | Description |
+| ---- | ----------- |
+| [:material-file-download: ts_opt.inp](files/ex07/ts_opt.inp){ download="ts_opt.inp" } | TS optimisation + frequencies (prepared guess) |
