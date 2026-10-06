@@ -45,6 +45,11 @@ method. That is why `Opt` and `Freq` are run together.
 /path/to/orca acetone_freq.inp > acetone_freq.out
 ```
 
+!!! tip "Faster with more cores"
+    Frequency calculations are much more expensive than single points. Add `PAL4` to the
+    keyword line (`! B3LYP def2-SVP Opt Freq PAL4`) to run on 4 cores.
+    See [Cores and memory](../orca.md#cores-and-memory).
+
 ## Output
 
 | Search for | What it is |

@@ -175,6 +175,16 @@ these two lines to the input, below the `!` line:
 | `%pal nprocs 4 end` | Run on 4 CPU cores |
 | `%maxcore 2000` | Memory ORCA may use **per core**, in MB. Here: 4 × 2000 MB = 8 GB in total |
 
+!!! tip "Shortcut: the `PAL` keyword"
+    Instead of the `%pal` block you can put the number of cores on the keyword line:
+    `PAL4` is the same as `%pal nprocs 4 end`. `PAL2` to `PAL8` (and some larger values,
+    e.g. `PAL16`) work this way.
+
+    ```text
+    ! B3LYP def2-SVP Opt PAL4
+    %maxcore 2000
+    ```
+
 How to choose the numbers:
 
 1. **Cores:** at most the number of cores your computer has. Find it with

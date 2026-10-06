@@ -12,6 +12,8 @@ Each exercise has ORCA input files to download and run. See
 | 5 | [Optimisation and frequencies](05-freq.md) |
 | 6 | [Conformer search](06-conf-search.md) |
 
+**Tools:** [Name / SMILES → XYZ](tools.md): get 3D coordinates for your own molecule.
+
 <!--
 To add an exercise:
   1. ORCA inputs -> docs/files/exNN/

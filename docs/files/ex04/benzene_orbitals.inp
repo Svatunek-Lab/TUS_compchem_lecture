@@ -1,0 +1,37 @@
+# Benzene: orbital energies + cube files of the six pi orbitals
+# 21 occupied orbitals (0-20): HOMO = 19/20 (degenerate), LUMO = 21/22 (degenerate)
+! B3LYP def2-SVP
+
+%plots
+  Format Gaussian_Cube
+  dim1 80
+  dim2 80
+  dim3 80
+  min1 -8.0
+  max1  8.0
+  min2 -8.0
+  max2  8.0
+  min3 -8.0
+  max3  8.0
+  MO("benzene_pi1.cube", 16, 0);   # lowest pi, no node
+  MO("benzene_pi2.cube", 19, 0);   # HOMO
+  MO("benzene_pi3.cube", 20, 0);   # HOMO (degenerate with 19)
+  MO("benzene_pi4.cube", 21, 0);   # LUMO
+  MO("benzene_pi5.cube", 22, 0);   # LUMO (degenerate with 21)
+  MO("benzene_pi6.cube", 28, 0);   # highest pi*, nodes between all C atoms
+end
+
+* xyz 0 1
+C -0.984700 0.991500 0.067200
+C -1.353000 -0.355000 -0.026000
+C -0.368300 -1.346500 -0.093200
+C 0.984700 -0.991500 -0.067200
+C 1.353000 0.355000 0.026000
+C 0.368300 1.346500 0.093200
+H -1.746600 1.758600 0.119100
+H -2.399700 -0.629600 -0.046100
+H -0.653200 -2.388200 -0.165200
+H 1.746600 -1.758600 -0.119100
+H 2.399700 0.629600 0.046100
+H 0.653200 2.388200 0.165200
+*
